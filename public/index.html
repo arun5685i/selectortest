@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country, State, City Selector</title>
+</head>
+
+<body>
+    <h1>Select Location</h1>
+    <form id="locationForm">
+        <label for="country">Country:</label>
+        <select name="country" id="country" onchange="fetchStates()">
+            <option value="">Select Country</option>
+        </select>
+
+        <label for="state">State:</label>
+        <select name="state" id="state" onchange="fetchCities()" disabled>
+            <option value="">Select State</option>
+        </select>
+
+        <label for="city">City:</label>
+        <select name="city" id="city" disabled>
+            <option value="">Select City</option>
+        </select>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
